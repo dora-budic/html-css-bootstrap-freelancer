@@ -2,24 +2,103 @@ body {
   font-family: 'Signika', sans-serif;
 }
 
+/* UTILITY */
+.mb-10 {
+  margin-bottom: 10px;
+}
+/* UTILITY */
+
 .navbar-default {
   background-color: #2C3E50;
   background-image: none;
   box-shadow: none;
   border: none;
   border-radius: 0;
-  padding: 15px 0;
+  padding: 20px 0;
+  margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand {
   color: #fff;
   text-transform: uppercase;
   font-weight: bold;
+  font-size: 24px;
+}
+
+#start-bootstrap {
+  text-align: center;
+  color: #fff;
+  background-color: #1ABC9C;
+}
+
+#start-bootstrap .content {
+  padding: 40px 0;
+}
+
+#start-bootstrap img {
+  width: 240px;
+}
+
+#start-bootstrap h1 {
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+#start-bootstrap .divider hr {
+  display: inline-block;
+  width: 80px;
+  border-width: 4px;
+  border-radius: 10px;
+  vertical-align: middle;
+}
+
+#start-bootstrap .divider i {
+  font-size: 30px;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+#start-bootstrap span {
+  text-transform: uppercase;
+  font-size: 22px;
 }
 
 @media all and (min-width: 768px) {
+  .navbar-default .navbar-brand {
+    font-size: 28px;
+  }
+
   .navbar-default .navbar-nav > li > a {
+    font-size: 18px;
     color: #fff;
     text-transform: uppercase;
+  }
+
+  #start-bootstrap h1 {
+    font-size: 60px;
+  }
+
+  #start-bootstrap span {
+    text-transform: uppercase;
+    font-size: 26px;
+  }
+
+  #start-bootstrap .divider hr {
+    width: 125px;
+  }
+
+  #start-bootstrap .divider i {
+    font-size: 24px;
+    margin: 0 15px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  #start-bootstrap .divider hr {
+    width: 150px;
+  }
+
+  #start-bootstrap .divider i {
+    margin: 0 20px;
   }
 }
