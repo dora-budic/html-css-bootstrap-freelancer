@@ -1,6 +1,25 @@
+body {
+  font-family: 'Signika', sans-serif;
+}
 
+.navbar-default {
+  background-color: #2C3E50;
+  background-image: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;
+  padding: 15px 0;
+}
 
 .navbar-default .navbar-brand {
-  color: #ffffff;
+  color: #fff;
   text-transform: uppercase;
+  font-weight: bold;
+}
+
+@media all and (min-width: 768px) {
+  .navbar-default .navbar-nav > li > a {
+    color: #fff;
+    text-transform: uppercase;
+  }
 }
