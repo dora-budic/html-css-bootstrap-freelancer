@@ -1,5 +1,5 @@
 body {
-  font-family: 'Signika', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* UTILITY */
@@ -10,95 +10,108 @@ body {
 
 .navbar-default {
   background-color: #2C3E50;
-  background-image: none;
+  font-weight: bold;
+  text-transform: uppercase;
   box-shadow: none;
   border: none;
   border-radius: 0;
-  padding: 20px 0;
+  padding: 16px 0;
   margin-bottom: 0;
 }
 
 .navbar-default .navbar-brand {
   color: #fff;
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
 }
 
-#start-bootstrap {
+.navbar-default .navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a {
+  color: #fff;
+}
+
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    color: #1abc9c;
+}
+
+.navbar-default .navbar-collapse {
+  border-color: transparent;
+}
+
+#jumbtron {
+  margin-top: 82px;
   text-align: center;
   color: #fff;
   background-color: #1ABC9C;
+  padding: 96px 0;
 }
 
-#start-bootstrap .content {
-  padding: 40px 0;
-}
-
-#start-bootstrap img {
+#jumbtron img {
   width: 240px;
 }
 
-#start-bootstrap h1 {
+#jumbtron h1 {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 44px;
+  font-weight: 700;
 }
 
-#start-bootstrap .divider hr {
+#jumbtron .divider hr {
   display: inline-block;
-  width: 80px;
+  width: 112px;
   border-width: 4px;
-  border-radius: 10px;
+  border-radius: 16px;
   vertical-align: middle;
 }
 
-#start-bootstrap .divider i {
-  font-size: 30px;
+#jumbtron .divider i {
+  font-size: 32px;
   vertical-align: middle;
   margin: 0 5px;
 }
 
-#start-bootstrap span {
+#jumbtron span {
+  font-size: 20px;
+  font-weight: 300;
   text-transform: uppercase;
-  font-size: 22px;
 }
 
-@media all and (min-width: 768px) {
+@media all and (min-width: 992px) {
+  .container-lg, .container-md, .container-sm, .container {
+    max-width: 960px;
+}
+
+ .navbar-default {
+   padding-top: 24px;
+   padding-bottom: 24px;
+ }
+
   .navbar-default .navbar-brand {
     font-size: 28px;
   }
 
   .navbar-default .navbar-nav > li > a {
     font-size: 18px;
-    color: #fff;
-    text-transform: uppercase;
   }
 
-  #start-bootstrap h1 {
-    font-size: 60px;
+  #jumbtron {
+    margin-top: 98px;
   }
 
-  #start-bootstrap span {
-    text-transform: uppercase;
-    font-size: 26px;
+  #jumbtron h1 {
+    font-size: 64px;
   }
 
-  #start-bootstrap .divider hr {
-    width: 125px;
-  }
-
-  #start-bootstrap .divider i {
+  #jumbtron span {
     font-size: 24px;
-    margin: 0 15px;
   }
 }
 
-@media all and (min-width: 992px) {
-  #start-bootstrap .divider hr {
-    width: 150px;
+@media all and (min-width: 1200px) {
+  .container-xl, .container-lg, .container-md, .container-sm, .container {
+      max-width: 1140px;
   }
 
-  #start-bootstrap .divider i {
-    margin: 0 20px;
-  }
 }
