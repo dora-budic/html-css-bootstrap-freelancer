@@ -10,6 +10,18 @@ body {
 .mb-10 {
   margin-bottom: 10px;
 }
+
+.mt-24 {
+  margin-top: 24px;
+}
+
+.btn {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  color: #fff;
+  padding: 10px 15px;
+  font-size: 18px;
+}
 /* UTILITY */
 
 .navbar-default {
@@ -70,7 +82,7 @@ body {
 
 .divider hr {
   display: inline-block;
-  width: 112px;
+  width: 100px;
   border-width: 4px;
   border-radius: 16px;
   vertical-align: middle;
@@ -84,7 +96,6 @@ body {
 
 #jumbtron span {
   font-size: 20px;
-  font-weight: 300;
   text-transform: uppercase;
 }
 
@@ -94,7 +105,7 @@ body {
   padding: 96px 0;
 }
 
-#portfolio h2 {
+h2 {
   font-size: 36px;
   text-transform: uppercase;
   font-weight: 700;
@@ -105,8 +116,6 @@ body {
 }
 
 #portfolio .content {
-  max-width: 400px;
-  margin: 0 auto;
   background-color: #1ABC9C;
   position: relative;
 }
@@ -150,10 +159,22 @@ body {
   padding: 96px 0;
 }
 
-#about h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 700;
+#about .divider hr {
+  width: 70px;
+}
+
+#about p {
+  font-size: 21px;
+  text-align: left;
+}
+
+#about a i {
+  margin-right: 5px;
+}
+
+#about a:hover {
+  background-color: #fff;
+  transition: all 0.2s ease-in-out
 }
 
 @media all and (min-width: 768px) {
@@ -182,12 +203,25 @@ body {
     font-size: 64px;
   }
 
-  #jumbtron span {
-    font-size: 24px;
+  .divider hr {
+    width: 150px;
   }
 
-  #portfolio h2 {
+  #jumbtron span {
+    font-size: 24px;
+    text-transform: uppercase;
+  }
+
+h2 {
     font-size: 48px;
+  }
+
+  #about .divider hr {
+    width: 100px;
+  }
+
+  #about p {
+    font-size: 18px;
   }
 }
 
@@ -196,4 +230,11 @@ body {
       max-width: 1140px;
   }
 
+  .divider hr {
+    width: 220px;
+  }
+
+  #about .divider hr {
+    width: 130px;
+  }
 }
