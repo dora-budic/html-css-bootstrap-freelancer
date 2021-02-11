@@ -3,6 +3,10 @@ body {
 }
 
 /* UTILITY */
+.mb-48 {
+  margin-bottom: 48px;
+}
+
 .mb-10 {
   margin-bottom: 10px;
 }
@@ -50,6 +54,7 @@ body {
 
 #jumbtron img {
   width: 240px;
+  margin-bottom: 48px;
 }
 
 #jumbtron h1 {
@@ -58,7 +63,12 @@ body {
   font-weight: 700;
 }
 
-#jumbtron .divider hr {
+.divider {
+  margin-top: 20px;
+  margin-bottom: 24px;
+}
+
+.divider hr {
   display: inline-block;
   width: 112px;
   border-width: 4px;
@@ -66,7 +76,7 @@ body {
   vertical-align: middle;
 }
 
-#jumbtron .divider i {
+.divider i {
   font-size: 32px;
   vertical-align: middle;
   margin: 0 5px;
@@ -78,7 +88,47 @@ body {
   text-transform: uppercase;
 }
 
-@media all and (min-width: 992px) {
+#portfolio {
+  color: #2c3e50;
+  text-align: center;
+  padding: 96px 0;
+}
+
+#portfolio h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+#portfolio .divider hr {
+  border-color: #2c3e50;
+}
+
+#portfolio .content {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+#portfolio .content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+#about {
+  background-color: #1ABC9C;
+  text-align: center;
+  color: #fff;
+  padding: 96px 0;
+}
+
+#about h2 {
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+@media all and (min-width: 768px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
 }
@@ -107,9 +157,13 @@ body {
   #jumbtron span {
     font-size: 24px;
   }
+
+  #portfolio h2 {
+    font-size: 48px;
+  }
 }
 
-@media all and (min-width: 1200px) {
+@media all and (min-width: 992px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
       max-width: 1140px;
   }
