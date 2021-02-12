@@ -26,7 +26,8 @@ body {
 .btn-social {
   border: 2px solid #fff;
   border-radius: 100%;
-  padding: 12px 20px;
+  padding: 6px 8px;
+  margin: 0 4px;
 }
 
 /* UTILITY */
@@ -193,7 +194,7 @@ h2 {
 }
 
 #form .my-form-control {
-  height: 92px;
+  height: 80px;
   padding-bottom: 8px;
   width: 100%;
   border: 0;
@@ -240,14 +241,14 @@ h2 {
 }
 
 footer {
-  background-color: #2C3E50;
+  background-color: #3A546D;
   color: #fff;
-  padding: 96px 0;
+  padding-top: 96px;
 }
 
 footer h4 {
   text-transform: uppercase;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 footer span {
@@ -265,12 +266,26 @@ footer span a:hover {
 }
 
 footer a.btn i {
-  font-size: 20px;
-  width: 24px;
+  font-size: 14px;
+  width: 20px;
+  line-height: 20px;
 }
 
 footer a.btn:hover {
   background-color: #fff;
+}
+
+.bg-copyright {
+  background-color: #2C3E50;
+}
+
+footer .bg-copyright .content {
+  padding-top: 70px;
+  padding-bottom: 80px;
+}
+
+footer .bg-copyright .content span {
+  font-size: 14px;
 }
 
 @media all and (min-width: 768px) {
@@ -319,6 +334,19 @@ h2 {
   #about p {
     font-size: 18px;
   }
+
+  footer h4 {
+    font-size: 19px;
+  }
+
+  footer span {
+    font-size: 14px;
+  }
+
+  footer .bg-copyright .content {
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -332,5 +360,10 @@ h2 {
 
   #about .divider hr {
     width: 130px;
+  }
+
+  footer .bg-copyright .content {
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
 }
