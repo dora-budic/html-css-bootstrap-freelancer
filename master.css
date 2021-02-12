@@ -49,7 +49,7 @@ body {
 }
 
 .navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
-    color: #1abc9c;
+  color: #1abc9c;
 }
 
 .navbar-default .navbar-collapse {
@@ -141,7 +141,6 @@ h2 {
   font-size: 64px;
 }
 
-
 #portfolio .content .overlay:hover {
   opacity: 1;
 }
@@ -174,12 +173,69 @@ h2 {
 
 #about a:hover {
   background-color: #fff;
-  transition: all 0.2s ease-in-out
+  transition: all 0.2s ease-in-out;
+}
+
+#form {
+  padding: 96px 0;
+}
+
+#form .divider hr {
+  width: 70px;
+  border-color: #2c3e50;
+}
+
+#form .my-form-control {
+  height: 92px;
+  padding-bottom: 8px;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  font-size: 24px;
+  color: #2c3e50;
+}
+
+:focus {
+  outline: 0;
+}
+
+#form .floating-label label {
+  font-size: 0.85em;
+  line-height: 1.764705882em;
+  position: relative;
+  z-index: 0;
+  top: 2em;
+  display: block;
+  margin: 0;
+  transition: top 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+}
+
+#form .floating-label:focus-within label{
+  color: #1abc9c;
+  top: 0;
+  opacity: 1;
+}
+
+
+#form textarea.my-form-control {
+  height: 232px;
+  padding-top: 15px;
+}
+
+#form button.btn-primary {
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+#form button.btn-primary:hover {
+  background-color: #159a80;
+  border-color: #148f77;
 }
 
 @media all and (min-width: 768px) {
-  .container-lg, .container-md, .container-sm, .container {
-    max-width: 960px;
+  .container {
+    max-width: 720px;
 }
 
  .navbar-default {
@@ -226,8 +282,8 @@ h2 {
 }
 
 @media all and (min-width: 992px) {
-  .container-xl, .container-lg, .container-md, .container-sm, .container {
-      max-width: 1140px;
+  .container {
+      max-width: 960px;
   }
 
   .divider hr {
