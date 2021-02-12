@@ -26,8 +26,8 @@ body {
 .btn-social {
   border: 2px solid #fff;
   border-radius: 100%;
-  padding: 6px 8px;
   margin: 0 4px;
+  color: #fff;
 }
 
 /* UTILITY */
@@ -265,13 +265,23 @@ footer span a:hover {
   text-decoration: underline;
 }
 
-footer a.btn i {
-  font-size: 14px;
-  width: 20px;
-  line-height: 20px;
+footer a.btn-social {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  position: relative;
+
 }
 
-footer a.btn:hover {
+footer a.btn-social i {
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+footer a.btn-social:hover {
   background-color: #fff;
 }
 
