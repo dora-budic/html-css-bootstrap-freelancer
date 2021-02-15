@@ -126,6 +126,8 @@ h2 {
 #portfolio .content {
   background-color: #1ABC9C;
   position: relative;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
 #portfolio .content .overlay {
@@ -200,11 +202,14 @@ h2 {
   border: 0;
   border-bottom: 1px solid #ccc;
   font-size: 24px;
-  color: #2c3e50;
 }
 
 :focus {
   outline: 0;
+}
+
+::placeholder {
+  color: #2c3e50;
 }
 
 #form .floating-label label {
